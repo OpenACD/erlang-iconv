@@ -367,5 +367,8 @@ DRIVER_INIT(iconvdrv)
   iconvdrv_driver_entry.driver_name  = "iconv_drv";
   iconvdrv_driver_entry.finish       = NULL;
   iconvdrv_driver_entry.outputv      = NULL;
+  iconvdrv_driver_entry.extended_marker = ERL_DRV_EXTENDED_MARKER;
+  iconvdrv_driver_entry.major_version = ERL_DRV_EXTENDED_MAJOR_VERSION;
+  iconvdrv_driver_entry.minor_version = ERL_DRV_EXTENDED_MINOR_VERSION;
   return &iconvdrv_driver_entry;
 }
